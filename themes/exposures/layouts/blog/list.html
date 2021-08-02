@@ -1,0 +1,24 @@
+{{ define "main" }}
+<main>
+    <article>
+        <header>
+            <h1>{{.Title}}</h1>
+        </header>
+    </article>
+    <div class="blog_index">
+    <ul>
+    {{ range .Pages }}
+    {{ $image_src := .Page.Resources.GetMatch .Params.thumbnail }}
+    {{ $image := $image_src.Resize "250x" }}
+        <li class="thumbnail__listitem">
+            <a href="{{.Permalink}}" class="thumbnail">
+                <div class="thumbnail__img"><img src="{{ $image.RelPermalink }}" /></div>
+                 <div class="thumbnail__tint"></div>
+                 <div class="thumbnail__txt"><div>{{.Date.Format "2006-01-02"}}<br>{{.Title}}</div></div>
+            </a>
+        </li>
+    {{ end }}
+    </ul>
+    </div>
+</main>
+{{ end }}
