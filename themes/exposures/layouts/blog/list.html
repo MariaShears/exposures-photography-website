@@ -1,11 +1,6 @@
 {{ define "main" }}
 <main>
-    <article>
-        <header>
-            <h1>{{.Title}}</h1>
-        </header>
-    </article>
-    <div class="blog_index">
+   <div class="blog_index">
     <ul>
     {{ range .Pages }}
     {{ $image_src := .Page.Resources.GetMatch .Params.thumbnail }}

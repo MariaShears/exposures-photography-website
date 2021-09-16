@@ -1,0 +1,38 @@
+{{ define "main" }}
+<div class="centered_width">
+<main>
+    <div class="category_index">
+        <a href="bits-and-pretzels-2019" class="shooting shooting--horz">
+            <img src="/img/obama.jpg" class="shooting__img" alt="obama-bits-and-pretzels-2019" />
+            <div class="gallery_overlay">
+                <p class="gallery_text">Bits & Pretzels 2019</p>
+            </div>
+        </a>
+        <a href="ted-x-tum-2017" class="shooting">
+            <img src="/img/tedxtum.jpg" class="shooting__img" alt="tedxtum" />
+            <div class="gallery_overlay">
+                <p class="gallery_text">TED x TUM 2017</p>
+            </div>
+        </a>
+        <a href="queens-birthday" class="shooting">
+            <img src="/img/queens-birthday.jpg" class="shooting__img" alt="queens-birthday" />
+            <div class="gallery_overlay">
+                <p class="gallery_text">Queen's Birthday</p>
+            </div>
+        </a>
+        <a href="parov-stelar-concert" class="shooting shooting--horz">
+            <img src="/img/parov-stelar-concert.jpg" class="shooting__img" alt="parov-stelar-concert" />
+            <div class="gallery_overlay">
+                <p class="gallery_text">Parov Stelar Konzert</p>
+            </div>
+        </a>
+    </div>
+    <div class="button-container">
+    <a href="/contact" class="button">Jetzt anfragen</a>
+    </div>
+    <div class="category_index_text_container">
+        {{ .Content }}
+    </div>
+</main>
+</div>
+{{ end }}

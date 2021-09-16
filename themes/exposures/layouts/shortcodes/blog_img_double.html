@@ -1,0 +1,10 @@
+{{ $img_og_1 := .Page.Resources.GetMatch (.Get "src") }}
+{{ $img_og_2 := .Page.Resources.GetMatch (.Get "src2") }}
+
+{{ $img1 := $img_og_1.Resize "450x" }}
+{{ $img2 := $img_og_2.Resize "450x" }}
+
+<div class="blog_image_double">
+    <img src="{{ $img1.RelPermalink }}" />
+    <img src="{{ $img2.RelPermalink }}" />
+</div>

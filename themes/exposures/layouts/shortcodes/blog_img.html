@@ -1,0 +1,6 @@
+{{ $img_og_1 := .Page.Resources.GetMatch (.Get "src") }}
+{{ $img1 := $img_og_1.Resize "905x" }}
+
+<div class="blog_image">
+    <img src="{{ $img1.RelPermalink }}" />
+</div>

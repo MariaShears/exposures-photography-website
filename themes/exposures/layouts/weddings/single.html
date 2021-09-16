@@ -1,0 +1,30 @@
+{{ define "main" }}
+<main>
+    <div class="carousel"
+      data-flickity='{ "wrapAround": true, "pageDots": false, "prevNextButtons": false }'>
+        {{ with .Resources.ByType "image" }}
+        {{ range .}}
+        {{ $img := .Resize "x800" }}
+        <img class="carousel_img" width="{{ $img.Width }}" height="{{ $img.Height }}" src="{{ $img.RelPermalink }}" />
+        {{ end }}
+        {{ end }}
+    </div>
+    <div class="pictures_column">
+        {{ with .Resources.ByType "image" }}
+        {{ range . }}
+        {{ $img := .Resize "x800" }}
+        <img src="{{ $img.RelPermalink }}" />
+        {{ end }}
+        {{ end }}
+    </div>
+    <div class="button-container">
+        <a href="/contact" class="button">Jetzt anfragen</a>
+    </div>
+    {{ with .Content }}
+    <div class="shooting_gallery_text_container">
+        <p><span>“</span>{{ . }}</p>
+    </div>
+    {{ end }}
+</main>
+{{ end }}
+

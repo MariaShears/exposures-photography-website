@@ -1,0 +1,40 @@
+{{ define "main" }}
+<div class="centered_width">
+<main>
+    <div class="category_index">
+        <a href="l-and-d" class="shooting shooting--horz">
+            <img src="/img/l&d.jpg" class="shooting__img" alt="l&d" />
+            <div class="gallery_overlay">
+                <p class="gallery_text">L & D</p>
+            </div>
+        </a>
+        <a href="o-and-v" class="shooting">
+            <img src="/img/o&v.jpg" class="shooting__img" alt="o&v" />
+            <div class="gallery_overlay">
+                <p class="gallery_text">O & V</p>
+            </div>
+        </a>
+        <a href="b-and-m" class="shooting">
+            <img src="/img/b&m.jpg" class="shooting__img" alt="b&m" />
+            <div class="gallery_overlay">
+                <p class="gallery_text">B & M</p>
+            </div>
+        </a>
+        <a href="a-and-k" class="shooting shooting--horz">
+            <img src="/img/a&k.jpg" class="shooting__img" alt="a&k" />
+            <div class="gallery_overlay">
+                <p class="gallery_text">A & K</p>
+            </div>
+        </a>
+    </div>
+    <div class="button-container">
+    <a href="/contact" class="button">Jetzt anfragen</a>
+    </div>
+    <div class="category_index_text_container">
+        <p class="category_index_text">
+            {{ .Content }}
+        </p>
+    </div>
+</main>
+</div>
+{{ end }}
