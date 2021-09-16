@@ -106,7 +106,7 @@ Maria Egorova\
 Falkenstr. 15d\
 81541 München\
 Telefon: +49 176 25 00 23 74 (erreichbar von 9:00 Uhr bis 18:00 Uhr)\
-E-Mail: shooting@exposures-photography.com
+E-Mail: shooting.exposures.photography@gmail.com
 
 Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit
 anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z.B. Namen,

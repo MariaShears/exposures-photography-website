@@ -5,7 +5,7 @@ Photography\
 Vertreten durch Maria Egorova\
 Adresse: Falkenstr. 15d 81541 München\
 Tel: +4917625002374\
-E-Mail-Adresse: shooting@exposures-photography.com\
+E-Mail-Adresse: shooting.exposures.photography@gmail.com\
 Umsatzsteuer-Identifikationsnummer: 144/213/81330,\
 nachfolgend Anbieter genannt, der Vertrag
 zustande.
@@ -89,7 +89,7 @@ Um Ihr Widerrufsrecht auszuüben, müssen Sie mich
 Exposures Photography, Maria Egorova,\
 Falkenstr. 15d 81541 München\
 +4917625002374\
-shooting@exposures-photography.com
+shooting.exposures.photography@gmail.com
 
 mittels einer
 eindeutigen Erklärung (z.B. ein mit der Post versandter Brief, per Telefon oder E-Mail) über Ihren
@@ -113,7 +113,7 @@ Sie erreichen unseren Kundendienst zu folgenden Zeiten unter:\
 Exposures Photography, Maria Egorova,\
 Falkenstr. 15d 81541 München\
 +4917625002374\
-shooting@exposures-photography.com\
+shooting.exposures.photography@gmail.com\
 Öffnungszeiten: Mo.-Fr.: 09:00-18:00.
 
 ### Haftungsausschluss
