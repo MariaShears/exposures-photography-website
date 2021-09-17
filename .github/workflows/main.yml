@@ -1,40 +1,58 @@
-# This is a basic workflow to help you get started with Actions
+# name: Build and deploy Hugo Website
+#
+## Controls when the workflow will run
+# on:
+#  # Triggers the workflow on push or pull request events but only for the master branch
+#  push:
+#    branches:
+#      - master
+#
+## A workflow run is made up of one or more jobs that can run sequentially or in parallel
+# jobs:
+#  # This workflow contains a single job called "build"
+#  deploy:
+#    # The type of runner that the job will run on
+#    runs-on: ubuntu-latest
+#
+#    # Steps represent a sequence of tasks that will be executed as part of the job
+#    steps:
+#      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+#      - uses: actions/checkout@v2
+#        with:
+#          submodules: true
+#
+#      # Runs a single command using the runners shell
+#      - name: Setup Hugo
+#        uses: peaceiris/actions-hugo@v2
+#        with:
+#          hugo-version: 'latest'
+#
+#      # Runs a set of commands using the runners shell
+#      - name: Build
+#        run: hugo --minify
+#      # Deploys built website to S3
+#      - name: Deploy to S3
+#        run: hugo deploy --force --maxDeletes -1 --invalidateCDN
+#        env:
+name: Hugo Build and Deploy to S3
 
-name: Build and deploy Hugo Website
-
-# Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the master branch
   push:
-    branches:
-      - master
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
-  deploy:
-    # The type of runner that the job will run on
+  build:
+    name: Build and Deploy
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
-        with:
-          submodules: true
+      - name: Check out master
+        uses: actions/checkout@master
 
-      # Runs a single command using the runners shell
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
+      - name: Build and deploy
+        uses: AlbertMorenoDEV/deploy-hugo-to-s3-action@v0.0.3
         with:
-          hugo-version: 'latest'
-
-      # Runs a set of commands using the runners shell
-      - name: Build
-        run: hugo --minify
-      # Deploys built website to S3
-      - name: Deploy to S3
-        run: hugo deploy --force --maxDeletes -1 --invalidateCDN
-        env:
+          hugo-version: 0.72.0
           AWS_ACCESS_KEY_ID: ${{ secrets.HUGO_DEPLOY_ACCESS_KEY }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.HUGO_DEPLOY_SECRET_ACCESS_KEY }}
