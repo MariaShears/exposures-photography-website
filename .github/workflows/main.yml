@@ -34,6 +34,7 @@
 #      - name: Deploy to S3
 #        run: hugo deploy --force --maxDeletes -1 --invalidateCDN
 #        env:
+
 name: Hugo Build and Deploy to S3
 
 on:
@@ -50,8 +51,9 @@ jobs:
       - name: Check out master
         uses: actions/checkout@master
 
-      - name: Build and deploy
-        uses: AlbertMorenoDEV/deploy-hugo-to-s3-action@v0.0.3
+      - name: Deploy Hugo to S3
+        uses: AlbertMorenoDEV/deploy-hugo-to-s3-action@v0.0.4
+
         with:
           hugo-version: 0.72.0
           AWS_ACCESS_KEY_ID: ${{ secrets.HUGO_DEPLOY_ACCESS_KEY }}
