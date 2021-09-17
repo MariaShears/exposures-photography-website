@@ -4,7 +4,7 @@ resources:
 - name: about_me_img
   src: photograph_exposures_photography.jpg
 ---
-OO Licht und Emotionen sind meine Leidenschaft. Als Fotografin spiele ich damit rum um diese
+O Licht und Emotionen sind meine Leidenschaft. Als Fotografin spiele ich damit rum um diese
 entfalten zu lassen, oder die auf eine neue Art zu wiedergeben. Als Fotograf München arbeite ich
 seit ein paar Jahren und stelle mir das Leben ohne Fotografieren schlecht vor.Am liebsten
 fotografiere ich Menschen beim natürlichen Licht – sei es Paarenfotos, Hochzeitsfotos, Familienfotos
