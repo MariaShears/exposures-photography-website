@@ -56,10 +56,5 @@ jobs:
 
         with:
           hugo-version: 0.72.0
-      - name: Build
-        run: hugo --minify
-      # Deploys built website to S3
-      - name: Deploy to S3
-        run: hugo deploy --force --maxDeletes -1 --invalidateCDN
-        AWS_ACCESS_KEY_ID: ${{ secrets.HUGO_DEPLOY_ACCESS_KEY }}
-        AWS_SECRET_ACCESS_KEY: ${{ secrets.HUGO_DEPLOY_SECRET_ACCESS_KEY }}
+          AWS-ACCESS-KEY-ID: ${{ secrets.HUGO_DEPLOY_ACCESS_KEY }}
+          AWS-SECRET-ACCESS-KEY: ${{ secrets.HUGO_DEPLOY_SECRET_ACCESS_KEY }}
