@@ -453,6 +453,7 @@
 
 .blog_index ul {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     list-style: none;
     text-align: center;
@@ -460,6 +461,12 @@
     letter-spacing: 3px;
     font-family: consolas, sans-serif;
     font-size: 13px;
+}
+
+@media screen and (min-width: 600px) {
+    .blog_index ul {
+        flex-direction: row;
+    }
 }
 
 .thumbnail {
