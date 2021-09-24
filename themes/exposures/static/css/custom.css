@@ -121,15 +121,29 @@
     position: relative;
 }
 
+@media screen and (max-width: 600px) {
+        .gallery__item .gallery_overlay,
+        .shooting .gallery_overlay {
+        background: rgba(0, 0, 0, 0.4);
+    }
+}
+
+@media screen and (max-width: 600px) {
+        .gallery__item .gallery_text,
+        .shooting .gallery_text {
+        opacity: 1;
+    }
+}
+
 .gallery__item:hover .gallery_overlay,
 .shooting:hover .gallery_overlay {
     background: rgba(0, 0, 0, 0.4);
-}
+    }
 
 .gallery__item:hover .gallery_text,
 .shooting:hover .gallery_text {
-    opacity: 1;
-}
+        opacity: 1;
+    }
 
 .gallery__item--1 {
     grid-column-start: 1;
