@@ -16,6 +16,6 @@ jobs:
         uses: AlbertMorenoDEV/deploy-hugo-to-s3-action@v0.0.4
 
         with:
-          hugo-version: 0.72.0
+          hugo-version: '0.72.0'
           AWS-ACCESS-KEY-ID: ${{ secrets.HUGO_DEPLOY_ACCESS_KEY }}
           AWS-SECRET-ACCESS-KEY: ${{ secrets.HUGO_DEPLOY_SECRET_ACCESS_KEY }}
