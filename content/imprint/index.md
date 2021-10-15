@@ -7,7 +7,7 @@ resources:
 ---
 **Exposures Photography**
 
-Freiberufliche Fotografin Maria Egorova
+Freiberufliche Fotografin Maria Shears
 
 Falkenstr. 15d\
 81541 München\
