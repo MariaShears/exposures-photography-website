@@ -1,0 +1,15 @@
+{{ define "main"}}
+<form action='http://127.0.0.1:5000/data' method='POST' name="coffee_form">
+  <input type="text" name="name" placeholder="Name?"><br><br>
+  <input type="text" name="origin_country" placeholder="Country of origin?"><br><br>
+  <input type="text" name="pour_over" placeholder="Pour over?"><br><br>
+  <input type="text" name="espresso" placeholder="Espresso?"><br><br>
+  <input type="submit" value="Save">
+  <script type="text/javascript">
+        function myfunc() {
+            var input = document.getElementById('name');
+            alert(input.value);
+        }
+  </script>
+</form>
+{{ end }}
