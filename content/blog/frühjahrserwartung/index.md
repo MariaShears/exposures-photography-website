@@ -32,7 +32,7 @@ Sarah wollte keine klassischen "cheesy" Babybauch-Fotos haben und wir haben uns 
 
 {{< blog_img_double src="kiss_wife.jpg" src2="behind_the_tree.jpg">}}
 
-Ich hoffe sehr, dass das Baby gesund und glücklich in diese Welt kommt und alle drei viele warme und schöne Momente teilen. Ich hoffe auch dass sie bei jedem Blick auf die Fotos diese aufregende und wunderschöne Zeit 
+Ich hoffe sehr, dass das Baby gesund und glücklich auf diese Welt kommt und alle drei viele warme und schöne Momente teilen. Ich hoffe auch dass sie bei jedem Blick auf die Fotos diese aufregende und wunderschöne Zeit 
 kurz wieder erleben können!
 
 {{< blog_img src="sitting_together.jpg" >}}
